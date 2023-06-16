@@ -27,6 +27,7 @@ describe('contact form', () => {
 		});
 		cy.screenshot();
 		cy.get('[data-cy="contact-input-email"]').type('test@example.com{enter}');
+		cy.submitForm();
 		// cy.get('[data-cy="contact-btn-submit"]')
 		//   .contains('Send Message')
 		//   .should('not.have.attr', 'disabled');
